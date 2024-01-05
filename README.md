@@ -31,4 +31,29 @@ start = '5211001'
 end = '5211060'
 ...
 ```
+
+5. Run the script
+```bash
+python3 scrapData.py
+```
+
+6. This will generate a `results.json` file in the same directory
 > TODO: Add support for configs, pull requests are welcome.
+
+## Generating Results
+
+1. Install `pandoc` and a latex engine (e.g. `texlive`) for your OS (optional)
+2. If you are using `pandoc` then enable `systemHasPandoc` in `generateMarkdown.py`
+```python
+...
+systemHasPandoc = True
+...
+```
+3. Generate a markdown file from the json file
+```
+python3 generateMarkdown.py
+```
+4. Generate a pdf file from the markdown file
+```
+pandoc results.md -o results.pdf
+```
