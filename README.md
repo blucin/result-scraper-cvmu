@@ -31,4 +31,4 @@ start = '5211001'
 end = '5211060'
 ...
 ```
-> TODO: Add support for configs
+> TODO: Add support for configs, pull requests are welcome.
