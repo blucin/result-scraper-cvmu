@@ -47,10 +47,3 @@ with open("result_data.json", "r") as jsonfile:
 sorted_data = sorted(data, key=lambda x: float(x["sgpa"]), reverse=True)
 for i, student in enumerate(sorted_data):
     student["rank"] = i + 1
-
-print("Writing sorted data to result_data.json")
-with open("result_data.json", "w") as jsonfile:
-    json.dump(sorted_data, jsonfile, indent=4)
-
-print("Writing result to result.md")
-
