@@ -1,4 +1,5 @@
 env
 *.md
+!README.md
 *.pdf
 *.json
